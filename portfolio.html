@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>That Producer Aditya</h1>
+    <input type="checkbox" id="menu-toggle-checkbox" />
+    <label for="menu-toggle-checkbox" class="menu-toggle" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Hi! I'm Aditya! This is my portfolio.</h1>
+    <p>Welcome to my page where I showcase my projects and skills.</p>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-card glass">
+      <div class="about-container">
+        <img src="pfp.jpg" alt="Profile Picture" class="profile-pic">
+        <div>
+          <p>
+            I am a growing, learning web developer, coder, and music producer. I enjoy creating websites that are not
+            only functional but also visually appealing. I like experimenting with layouts, colors, and animations to
+            make each project unique. Alongside coding, I explore music production, blending creativity with technology
+            to express ideas in both digital and audio forms.
+          </p>
+
+          <div id="skills-section">
+            <h3>My Skills:</h3>
+            <ul>
+              <li class="glass">HTML</li>
+              <li class="glass">CSS</li>
+              <li class="glass">JavaScript</li>
+              <li class="glass">Python</li>
+              <li class="glass">Java</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Recent Projects</h2>
+    <div class="projects-grid">
+      <div class="project glass">
+        <h3>E-Commerce Website Simulation Project</h3>
+        <img src="Projects/E-Commerce-website-main/Images/screenshot.png" alt="E-Commerce Project Screenshot"
+          class="glass">
+        <p>Welcome to Camp Shop, a fictional e-commerce clothing brand designed to provide a seamless shopping
+          experience for men’s fashion. Explore our collection of high-quality tees, carefully curated to combine style
+          and comfort. Whether you're looking for casual wear or a statement piece, Camp Shop has something for
+          everyone. Enjoy a smooth and intuitive browsing experience, complete with a dynamic sale section offering
+          exciting discounts and special deals. This project showcases responsive design, interactive layouts, and
+          practical e-commerce features implemented with HTML, CSS, and JavaScript.</p>
+        <section id="skills-section">
+          <ul>
+            <li class="glass">HTML</li>
+            <li class="glass">CSS</li>
+            <li class="glass">JavaScript</li>
+          </ul>
+        </section>
+        <a href="Projects/E-Commerce-website-main/Index.html" target="_blank">Project Link</a>
+        <a href="https://github.com/Aditya-1105/E-Commerce-website" target="_blank">GitHub Link</a>
+      </div>
+
+      <div class="project glass">
+        <h3>Memory Sequence Game for DayDream Bengaluru Hackathon</h3>
+        <img src="Projects/HACKATHON/screenshot.jpeg" alt="Memory Sequence Game Screenshot" class="glass">
+        <p>A fun and interactive “Simon Says” style memory game built using HTML and CSS. Players must observe and
+          repeat a sequence of highlighted buttons, testing their memory and attention to detail. The game demonstrates
+          smooth animations, hover effects, and creative CSS-only interactivity, providing a visually engaging and
+          responsive experience. This project highlights an understanding of front-end logic and UI design without
+          relying on JavaScript.</p>
+        <section id="skills-section">
+          <ul>
+            <li class="glass">HTML</li>
+            <li class="glass">CSS</li>
+            <li class="glass">JavaScript</li>
+          </ul>
+        </section>
+        <a href="Projects/HACKATHON/index.html" target="_blank">Project Link</a>
+        <a href="https://github.com/Aditya-1105/DayDream_Hackathon" target="_blank">GitHub Link</a>
+      </div>
+
+      <div class="project glass">
+        <h3>The Unofficial Yugaantar Anthem (WIP)</h3>
+        <img src="Projects/Yugaantar-Anthem/yugaantar.jpg" alt="Yugaantar Anthem Screenshot" class="glass">
+        <audio controls>
+          <source src="Projects/Yugaantar-Anthem/Unofficial_Yugaantar_Anthem.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+        <p>This is a work-in-progress anthem for Scaler's upcoming festival, Yugaantar. The track does not have vocals
+          yet because the project is not confirmed. Vocals will be recorded once confirmation is received.</p>
+        <section id="skills-section">
+          <ul>
+            <li class="glass">Audio Production</li>
+            <li class="glass">Music Composition</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="my-socials">
+      <p>My Socials:</p>
+      <div class="socials">
+        <a href="https://github.com/aditya-1105" target="_blank" class="social-btn github">
+          <img src="github-icon.svg" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/aditya-karanam-6674832aa/" target="_blank" class="social-btn linkedin">
+          <img src="linkedin-icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://instagram.com/that_producer_aditya" target="_blank" class="social-btn instagram">
+          <img src="instagram-icon.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Aditya Karanam, 2025. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
