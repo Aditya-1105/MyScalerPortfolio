@@ -1,6 +1,6 @@
 # MyScalerPortflio
 
-This is the personal portfolio of Aditya Karanam, a web developer and music producer. The portfolio showcases projects, skills, and contact information, and is built using HTML, CSS, and minimal JS.
+This is the personal portfolio of Aditya Karanam, a web developer and music producer. The portfolio showcases projects, skills, and contact information, and is built using HTML and CSS.
 
 ## Features
 
