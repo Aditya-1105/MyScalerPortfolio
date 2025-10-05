@@ -72,6 +72,31 @@ body {
     #menu-toggle-checkbox:checked~.nav-links {
         display: flex;
     }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1.5rem;
+    }
+
+    #about,
+    #skills,
+    #projects,
+    #contact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #about #skills-section ul,
+    .project #skills-section ul {
+        justify-content: center;
+    }
 }
 
 header {
@@ -185,7 +210,8 @@ nav a:hover {
     flex-direction: column;
     padding: 1.5rem;
     gap: 15px;
-    height: 100%; /* ensures the project fills its grid cell */
+    height: 100%;
+    /* ensures the project fills its grid cell */
 }
 
 
