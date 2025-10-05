@@ -18,8 +18,13 @@ This is the personal portfolio of Aditya Karanam, a web developer and music prod
 - CSS3 (Flexbox, Grid, Glassmorphism)
 - Minimal JavaScript for menu toggle
 
+
 ## How to Run
+
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Aditya-1105/portfolio.git
+
+
+
