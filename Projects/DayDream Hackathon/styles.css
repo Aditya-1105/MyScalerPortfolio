@@ -1,0 +1,149 @@
+body {
+  text-align: center;
+  background: linear-gradient(120deg, #011F3F, #001848);
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite alternate;
+  font-family: 'Press Start 2P', cursive;
+  overflow-x: hidden;
+ 
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(
+      circle at top left,
+      rgba(255, 0, 150, 0.7),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(0, 200, 255, 0.6),
+      transparent 50%
+    ),
+    linear-gradient(135deg, #2a003f, #001f3f);
+  background-blend-mode: screen;
+  color: white;
+  font-family: 'Press Start 2P', monospace; 
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#level-title {
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+  text-shadow: 2px 2px 5px #000;
+}
+
+#high-score {
+  font-size: 1.5rem;
+  color: #ffdc00;
+  text-shadow: 0 0 10px #000;
+  margin-top: -10px;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #ffdc00; color: #ffd700; }
+  to { text-shadow: 0 0 15px #ffdc00; color: #ffe066; }
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 25px;
+  height: 150px;
+  width: 150px;
+  border: 5px solid #fff;
+  border-radius: 50%; 
+  transition: all 0.2s ease;
+  box-shadow: 0 0 15px #000 inset;
+}
+
+.btn.pressed {
+  box-shadow: 0 0 30px #fff, 0 0 50px currentColor;
+  transform: scale(1.1);
+  background-color: #fff;
+}
+
+.red { background-color: #ff1a1a; box-shadow: 0 0 20px #ff1a1a; }
+.blue { background-color: #1a75ff; box-shadow: 0 0 20px #1a75ff; }
+.green { background-color: #1aff1a; box-shadow: 0 0 20px #1aff1a; }
+.yellow { background-color: #ffff33; box-shadow: 0 0 20px #ffff33; }
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(-5px,0); }
+  50% { transform: translate(5px,0); }
+  75% { transform: translate(-5px,0); }
+  100% { transform: translate(0,0); }
+}
+
+#repeat-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 12px;
+  background-color: #ff4444;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#repeat-btn:hover {
+  background-color: #cc0000;
+}
+
+.btn {
+  margin: 25px;
+  height: 150px;
+  width: 150px;
+  border: 5px solid #fff;
+  border-radius: 50%; 
+  transition: all 0.2s ease;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+
+.red {
+  background-color: #ff1a1a;
+  box-shadow: 0 0 20px #ff1a1a, 0 0 40px #ff1a1a;
+}
+.blue {
+  background-color: #1a75ff;
+  box-shadow: 0 0 20px #1a75ff, 0 0 40px #1a75ff;
+}
+.green {
+  background-color: #1aff1a;
+  box-shadow: 0 0 20px #1aff1a, 0 0 40px #1aff1a;
+}
+.yellow {
+  background-color: #ffff33;
+  box-shadow: 0 0 20px #ffff33, 0 0 40px #ffff33;
+}
+
+
+.btn.pressed {
+  transform: scale(1.1);
+  box-shadow: 0 0 50px #fff, 0 0 100px currentColor, 0 0 150px currentColor;
+  background-color: #fff;
+}
